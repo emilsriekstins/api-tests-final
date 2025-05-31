@@ -4,7 +4,7 @@ pipeline {
         pollSCM('*/1 * * * *')
     }
     stages {
-         stage('build-api-test-image') {
+         stage('build-docker-image') {
             steps {
                buildDockerImage()
             }
