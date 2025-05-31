@@ -13,7 +13,7 @@ pipeline {
 }
 
 def buildDockerImage(){
-    echo "Building of application is starting.."
+    echo "Building of Docker image is starting.."
     sh "docker build -t emilsriekstins/api-tests:latest ."
 
     echo "Pushing image to docker registry.."
